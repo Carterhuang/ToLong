@@ -1,0 +1,44 @@
+Name: Hengyi(Carter) Huang
+Email: hh548@cornell.edu
+
+stringtolong: A function that converts a string to a
+8-byte long.
+
+The function, stringtolong, does exactly what atoi does. atoi is
+a C++ built-in function that converts string to integer(int). 
+So the only difference is that now the converted value is a "long"
+instead of "int".
+
+So I just copy-and-pasted the decription of "atoi" from C++
+documentation and made a little modification based on that.
+
+
+*** Decription of strtolong ***
+
+This function discards whitespaces until the first non-whitespace
+character is found. Then it checks the first non-whitespace
+character to see if this is a plus sign or minus sign. After 
+that, scan the rest of the string for as many continuous numerical
+digits as possible and convert them as a numerical long value.
+
+The string can contain additional characters after those that 
+form the integral number, which are ignored and have no effect 
+on the behavior of this function.
+
+If the first sequence of non-whitespace characters in str is not 
+a valid integral number, or if no such sequence exists because 
+either str is empty or it contains only whitespace characters, 
+no conversion is performed.
+
+If no valid conversion could be performed, a zero value is returned. 
+If the correct value is out of the range of representable values, 
+LONG_MAX (9223372036854775807) or LONG_MIN (-9223372036854775809) 
+is returned.
+
+
+*** How to Run the Program ***
+
+Execute:
+    g++ test_tolong.cpp tolong.cpp -o run_tests
+    ./run_tests
+    
