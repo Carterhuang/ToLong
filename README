@@ -35,6 +35,12 @@ If the correct value is out of the range of representable values,
 LONG_MAX (9223372036854775807) or LONG_MIN (-9223372036854775809) 
 is returned.
 
+*** Limitations ***
+This function treats hex numbers as invalid ones and therefore
+returns zero. Octal numbers are treated as decimals and the heading
+zero and ignored. For overly large/small numbers, the function
+return LONG_MAX/LONG_MIN.
+
 
 *** How to Run the Program ***
 
